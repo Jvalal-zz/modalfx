@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bulma Cards Horizontal</title>
+  <link rel="stylesheet" href="dist/css/modal-fx.min.css" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+
+<style>
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1px;
+  background-color: #null;
+  padding: 5px;
+}
+.grid-container > div {
+  background-color: null;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 20px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1px;
+  background-color: #null;
+  padding: 5px;
+
+}
+.grid-container2 > div {
+  background-color: null;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 20px;
+}
+.grid-container3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1px;
+  background-color: #null;
+  padding: 5px;
+
+}
+.grid-container3 > div {
+  background-color: null;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 20px;
+}
+
+</style>
+</br>
+</br>
+</br>
+<body>
+<nav class="navbar is-light" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="images/ss-primary-rorange-300x172.png">
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+
+      <a class="navbar-item">
+        My Dashboard
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Programs
+        </a>
+         <div class="navbar-dropdown">
+          <a class="navbar-item">
+            Program 1
+          </a>
+          <a class="navbar-item">
+            Program 2
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item">
+            Report an issue
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <section class="section">
+  <br>
+  <br>
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="card has-background-light">
+          <header class="card-header">
+            <p class="card-header-title is-centered is-size-5">
+              2 Schoolwide Licenses
+            </p>
+          </header>
+          <br>
+          <div class="card-content">
+            <div class="content">
+            <div class="grid-container">
+              <div>0/2</div>
+              <div>0</div>
+              <div>Licenses Assigned</div>  
+              <div>Educators Invited</div>
+            </div>
+            </div>
+          <br>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-footer-item has-text-grey">Assign Schools & Administrators</a>
+          </footer>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title is-centered is-size-5">
+              27 Indivudual Licenses
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+             <div class="grid-container3">
+                <div></div>
+                <div>Licenses <br> Assigned</div>
+                <div>Educators <br> Invited </div>  
+                <div>Grade 6</div>
+                <div>0/9</div>
+                <div>0/9</div>
+                <div>Grade 7</div>
+                <div>0/9</div>
+                <div>0/9</div>
+                <div>Grade 8</div>
+                <div>0/9</div>
+                <div>0/9</div>
+            </div>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-footer-item has-text-grey">Assign Schools & Administrators</a>
+          </footer>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card has-background-light">
+          <header class="card-header">
+            <p class="card-header-title is-centered is-size-5">
+              Child Protection/Bullying Prevention
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+             <div class="grid-container3">
+                <div></div>
+                <div>Licenses <br> Assigned</div>
+                <div>Educators <br> Invited </div>  
+                <div>Child Protection</div>
+                <div>0/9</div>
+                <div>0/9</div>
+                <div>Bullying Prevention</div>
+                <div>0/9</div>
+                <div>0/9</div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-footer-item has-text-grey" id="button">Assign Schools & Administrators</a>
+            <div class="modal" id="page-modal" class="modal modal-fx-fadeInScale">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <div class = "section modal-wrap">    
+                  <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="e.g Alex Smith">
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+                </div>
+              </div>
+              </div>
+              <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+ <script src="js/custom.js"></script>
+</body>
+
+</html>
